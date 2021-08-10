@@ -1,3 +1,47 @@
 body{
-    background-color: aqua;
+    background-color: skyblue;
+    text-align: center;
+}
+
+.lists {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.todo-item {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: springgreen;
+}
+
+.todo-item:hover{
+    border: 2px solid black;
+}
+
+.done-item{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(247, 152, 152);
+}
+
+.done-item:hover{
+    border: 2px solid black;
+}
+
+.complete-button{
+    background-color: springgreen;
+}
+
+.remove-button{
+    background-color: rgb(247, 152, 152);
+}
+
+button {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+button:hover{
+    box-shadow: 2px 0 2px 0 black;
 }

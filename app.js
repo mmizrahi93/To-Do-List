@@ -3,18 +3,14 @@ const submitButton = document.querySelector('#submit');
 const toDo = document.querySelector('.todo')
 const itemsCompleted = document.querySelector('.completed')
 
-// create elements
-
-
-
-
 const toDoArray = [];
 
 // Displays todo items
 const showList = () => {
-    let itemList = document.createElement('div')
+    const itemList = document.createElement('div')
     // created 'completed' button
-    let completebtn = document.createElement('button')
+    const completebtn = document.createElement('button')
+    completebtn.className = 'complete-button'
     completebtn.innerText = 'Completed'
     completebtn.setAttribute('id', 'lists')
 
@@ -32,7 +28,9 @@ const showList = () => {
         itemsCompleted.append(itemList)
 
         const removeBtn = document.createElement('button')
+        removeBtn.className = 'remove-button'
         removeBtn.innerText = 'Remove'
+        itemList.className = 'done-item'
         itemList.append(removeBtn)
         removeBtn.onclick = () => {
             itemList.remove()
